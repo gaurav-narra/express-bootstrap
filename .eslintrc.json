@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": false,
+    "commonjs": true,
+    "es6": true
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "extends": [
+    "airbnb-base"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {},
+  "overrides": [
+    {
+      "files": [
+        "test/**/*.js"
+      ],
+      "env": {
+        "mocha": true
+      },
+      "rules": {},
+      "globals": {
+        "should": "readonly"
+      }
+    }
+  ]
+}
